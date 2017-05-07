@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Story Manager</title>
+</head>
+<body>
+    <h1>User Story manager - Add new Story</h1>
+    <form action="/echo" method="POST" name="data_from_user">
+        <p>
+            Story Title<br>
+            <input type="text" name="story_title"></input>
+        </p>
+        <p>
+            User Story<br>
+            <input type="text" name="user_story"></input>
+        </p>
+        <p>
+            Acceptance criteria<br>
+            <input type="text" name="acceptance_criteria"></input>
+        </p>
+        <p>
+            Business Value<br>
+            <input type="number" name="business_value" min="100" max="1500" step="100"></input>
+        </p>
+        <p>
+            Estimation (h)<br>
+            <input type="number" name="estimation" min="0.5" max="40" step="0.5"></input>
+        </p>
+        <p>
+            Status<br>
+            <select name="status">
+                <option value="planning">Planning</option>
+                <option value="todo">TODO</option>
+                <option value="in_progress">In Progress</option>
+                <option value="review">Review</option>
+                <option value="done">Done</option>
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Create"></input>
+        </p>
+    </form>
+</body>
+</html>
